@@ -14,6 +14,46 @@ Se borra el Css que hay dentro de APP.css que es para el logo de React
 
 El componente principal es el fichero src/App.js 
 
+
+## En el frontend
+
+Instalamos las dependencias.
+
+    npm install 
+
+## Enrutamiento en React
+
+Instalar en el frontend
+
+Para conectar varias vistas (componentes React) en una sola aplicación grande.
+
+    npm install react-router-dom
+
+Lo que se instala:
+
+    ├── @testing-library/jest-dom@5.16.4
+    ├── @testing-library/react@13.3.0
+    ├── @testing-library/user-event@13.5.0
+    ├── react-dom@18.1.0
+    ├── react-router-dom@6.3.0
+    ├── react-scripts@5.0.1
+    ├── react@18.1.0
+    └── web-vitals@2.1.4
+
+
+## En el backend
+
+Iniciamos el proyecto de node: 
+
+    npm init -y
+
+    npm install express         
+
+    npm install jsonwebtoken
+
+Creamos dentro del backend nuestro index.mjs 
+
+
 ## Realizamos nuestro commit inicial.
 
     cd autenticacionweb.git/
@@ -42,6 +82,9 @@ Después siempre npm start para arrancar el proyecto
 
     npm start
 
+## Para consultar que esta instalado
+
+    npm list
 
 ## Para desinstalar un paquete equivocado en node: 
 
@@ -50,6 +93,7 @@ Después siempre npm start para arrancar el proyecto
 ## Rectificar un git add antes de git commit -m
 
     git reset
+
 
 ## Fuera de src
 
@@ -73,6 +117,7 @@ Añadir en su interior, ejemplos:
 Dentro de la carpeta el fichero o ficheros `.jsx` que sean, y el `.css` si se necesita. Podrían estar otras carpetas dentro con su fichero `.jsx`
 
 Al mismo nivel que App.js dentro de src posible `defines.mjs`
+
 
 #### `carpeta components` 
 
@@ -132,34 +177,7 @@ Authorization.jsx
 
 --
 
-## En el frontend
-
-Instalamos las dependencias.
-
-    npm install 
-
-Lo que se instala:
-
-    ├── @testing-library/jest-dom@5.16.4
-    ├── @testing-library/react@13.3.0
-    ├── @testing-library/user-event@13.5.0
-    ├── react-dom@18.1.0
-    ├── react-router-dom@6.3.0
-    ├── react-scripts@5.0.1
-    ├── react@18.1.0
-    └── web-vitals@2.1.4
-
 ## En el backend
-
-Iniciamos el proyecto de node: 
-
-    npm init -y
-
-    npm install express         
-
-    npm install jsonwebtoken
-
-Creamos dentro del backend nuestro index.mjs
 
 Estaría la base de datos db.mjs
 
@@ -208,8 +226,4 @@ Exportar la Base de datos, poner al final del código
 
 
 
-## Enrutamiento en React
 
-Para conectar varias vistas (componentes React) en una sola aplicación grande.
-
-    npm install --save react-router

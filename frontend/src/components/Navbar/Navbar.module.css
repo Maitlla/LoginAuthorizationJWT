@@ -1,0 +1,15 @@
+.navegador {
+    top: 0px;
+    position: fixed;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: darkturquoise;
+}
+
+
+

@@ -2,7 +2,7 @@ import './App.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Navbar from './components/Navbar/Navbax';
+import Navbar from './components/Navbar/Navbar';
 import Home from './views/Home/Home';
 import Public from './views/Public/Public';
 import Private from './views/Private/Private';
@@ -16,18 +16,31 @@ function App() {
     <ContextProvider>
       <BrowserRouter>
         <header>
-          <h1>Authorization React example</h1>
           <nav>
-            <Navbar/>
-            <Session/>
+            
+            <Navbar />
+            <h1 className='session'>Authorization React example</h1>
+            <Session />
           </nav>
         </header>
-        <hr/>
+        <hr />
         <main>
+        <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+            
           <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/public/' element={<Public/>}/>
-            <Route path='/private/' element={<Authorization><Private/></Authorization>}/>
+            <Route path='/' element={<Home />} />
+            <Route path='/public/' element={<Public />} />
+            <Route path='/private/' element={<Authorization><Private /></Authorization>} />
           </Routes>
         </main>
       </BrowserRouter>
