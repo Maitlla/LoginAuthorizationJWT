@@ -1,5 +1,5 @@
 import { useContext } from "react"
-
+import style from'./Login.module.css';
 import { context } from "../../services/ContextProvider"
 
 function Login () {
@@ -15,7 +15,7 @@ function Login () {
     }
 
     return (
-        <form id="Login" onSubmit={loginHandler}>
+        <form id="Login" className={"LoginLogout " + style.LoginLogout} onSubmit={loginHandler}>
             <input type="text" name="username"/>
             <input type="password" name="password" id="" />
             <input type="submit" value="Login" />

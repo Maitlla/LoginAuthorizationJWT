@@ -14,8 +14,23 @@ function Private () {
 
     return (
         <div id="Private">
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
+            <p>s</p>
             <h2>Private</h2>
-            {state.secrets}
+            {state.secrets ? state.secrets : <p>s</p>}
         </div>
     )
 }

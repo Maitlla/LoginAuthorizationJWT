@@ -1,5 +1,5 @@
 import { useContext } from "react";
-
+import style from'./Session.module.css';
 import { context } from "../../services/ContextProvider";
 import Login from "../Login/Login";
 import Logout from "../Logout/Logout";

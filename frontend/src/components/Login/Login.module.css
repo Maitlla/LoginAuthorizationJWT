@@ -1,0 +1,14 @@
+.LoginLogout {
+    top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    min-width: 100%;
+    display: grid;
+    justify-items: stretch;
+    justify-content: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    background-color: black;
+}
+

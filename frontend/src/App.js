@@ -19,24 +19,12 @@ function App() {
           <nav>
             
             <Navbar />
-            <h1 className='session'>Authorization React example</h1>
             <Session />
           </nav>
         </header>
         <hr />
         <main>
         <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
-            
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/public/' element={<Public />} />
