@@ -9,12 +9,17 @@
     justify-content: center;
     grid-column-gap: 0px;
     grid-row-gap: 10px;
+    color: white;
     background-color: black;
 }
 
-input {
+button {
     width: 260px;
     font-weight: bold;
     font-size: 1em;
+}
 
+p {
+    margin: 0px;
+    padding-bottom: 3px;
 }

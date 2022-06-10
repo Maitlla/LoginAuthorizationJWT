@@ -1,0 +1,15 @@
+.estructura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.6fr 12fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 100vh;
+
+    background-color: whitesmoke;
+}
+
+.noLogin {
+    margin-top: 30px;
+    text-align: center;
+}

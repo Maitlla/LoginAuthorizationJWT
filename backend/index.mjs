@@ -23,7 +23,7 @@ function authMiddleware (req, res, next) {
     try {
         const [ method, token ] = req.headers.authorization.split(" ")
         const validAuth = jwt.verify(token,secret)
-        if ( validAuth ) {
+        if ( validAuth ) { // cambiar no esta bien - lo del throws quitar if 
             const { username } = jwt.decode(token)
             res.locals["username"] = username // Paso el user name para uso en los controllers
             next()

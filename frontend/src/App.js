@@ -9,28 +9,31 @@ import Private from './views/Private/Private';
 import Authorization from './services/Authorization';
 import ContextProvider from './services/ContextProvider';
 import Session from './components/Session/Session';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
     <ContextProvider>
       <BrowserRouter>
-        <header>
-          <nav>
-            
-            <Navbar />
-            <Session />
-          </nav>
-        </header>
-        <hr />
-        <main>
-        <p>s</p>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/public/' element={<Public />} />
-            <Route path='/private/' element={<Authorization><Private /></Authorization>} />
-          </Routes>
-        </main>
+        <div class="estructura">
+          <header>
+            <nav>
+
+              <Navbar />
+              <Session />
+            </nav>
+          </header>
+          <hr />
+          <main>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/public/' element={<Public />} />
+              <Route path='/private/' element={<Authorization><Private /></Authorization>} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </BrowserRouter>
     </ContextProvider>
   );

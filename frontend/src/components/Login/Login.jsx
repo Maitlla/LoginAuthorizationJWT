@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import style from'./Login.module.css';
+import style from './Login.module.css';
 import { context } from "../../services/ContextProvider"
 
-function Login () {
+function Login() {
 
     const { actions } = useContext(context)
 
@@ -16,8 +16,10 @@ function Login () {
 
     return (
         <form id="Login" className={"LoginLogout " + style.LoginLogout} onSubmit={loginHandler}>
-            <input type="text" name="username"/>
-            <input type="password" name="password" id="" />
+            <div>
+                <input type="text" name="username" />
+                <input type="password" name="password" id="" />
+            </div>
             <input type="submit" value="Login" />
         </form>
     )

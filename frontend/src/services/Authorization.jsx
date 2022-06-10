@@ -7,7 +7,7 @@ function Authorization({children}) {
 
     return (
         <div id="Authorization">
-            { state.token ? children : <h1>Please, login for view this content.</h1>}
+            { state.token ? children : <h3 className="noLogin">Please, login for view this content.</h3>}
         </div>
     )
 }

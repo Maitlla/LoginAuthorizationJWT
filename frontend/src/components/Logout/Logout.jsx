@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { context } from "../../services/ContextProvider"
+import style from'./Logout.module.css';
 
 function Logout () {
 
@@ -10,7 +11,8 @@ function Logout () {
     }
 
     return (
-        <div id="Logout">
+        <div id="Logout" className={"LoginLogout " + style.LoginLogout}>
+            <p>Has cerrado Session</p>
             <button onClick={clickHandler}>Logout</button>
         </div>
     )
