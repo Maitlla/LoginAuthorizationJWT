@@ -1,20 +1,21 @@
 /*import skate10H from "../../img/skate10H.png"; */
 
+import style from '../../components/PublicContraido/PublicContraido.module.css';
+import ListaArtculos from '../../components/ListaArticulos/ListaArticulos.jsx';
+
 function Public() {
     return (
         <div id="Public" className="noLogin">
-            <h3>Public</h3>
-            <p>Este contenido es público.</p>
-            <div>
+            
+            <div className={style.mainDividido}>
                 <div>
-                    <p>Izquierda</p>
-                    {/* <a href="https://github.com/expressjs/multer/blob/master/doc/README-es.md/">
-                        <img src={skate10H.png} alt="tabladeAlgo"></img>
-                    </a> */}  
+                    <p>Contenido público</p>
+                    <h3>Lista de artículos</h3>
+                    <ListaArtculos />
                 </div>
                 <div>
-                    <p>Derecha</p>
-
+                    <p>Contenido público</p>
+                    <h3>Artículo específico</h3>
                 </div>
             </div>
         </div >
